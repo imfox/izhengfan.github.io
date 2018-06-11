@@ -33,7 +33,13 @@ $$
 两个旋转叠加，可以表达为两个四元数相乘，或者一个 4*4 矩阵与一个四元数相乘：
 
 $$
-{\bf q \otimes p = Q}_l({\bf q)p} = {\bf Q}_r{\bf (p)q} 
+{\bf q} \otimes {\bf p} = \begin{bmatrix}
+q_w p_x - q_z p_y + q_y p_z + q_x p_w \\
+q_z p_x + q_w p_y - q_x p_z + q_y p_w \\
+-q_y p_x + q_x p_y + q_w p_z + q_z p_w \\
+-q_x p_x - q_y p_y - q_z p_z + q_w p_w \\
+\end{bmatrix} = {\bf Q}_l({\bf q)p} = {\bf Q}_r{\bf (p)q}
+
 $$
 
 这里的 $${\bf Q}_l$$ 为四元数矩阵， $${\bf Q}_r$$ 为共轭四元数矩阵：
