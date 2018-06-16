@@ -1,5 +1,7 @@
 # About
 
+[![Gitter](https://badges.gitter.im/vim-china/Lobby.svg)](https://gitter.im/fan-farm/Lobby)
+
 This is my homepage and blog based on jekyll. You can visit it at [fzheng.me](http://fzheng.me).
 
 At first I used the template of [Gao Haoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io) but then totally redesigned it. If you want to use his or this blog model, please **give a star at the repository** accordingly. Then you can clone it as your blog model.
