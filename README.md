@@ -1,6 +1,6 @@
 # About
 
-[![Gitter](https://badges.gitter.im/vim-china/Lobby.svg)](https://gitter.im/fan-farm/Lobby)
+[![Gitter](https://badges.gitter.im/fan-farm/Lobby.svg)](https://gitter.im/fan-farm/Lobby)
 
 This is my homepage and blog based on jekyll. You can visit it at [fzheng.me](http://fzheng.me).
 
