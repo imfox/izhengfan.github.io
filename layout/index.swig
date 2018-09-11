@@ -19,7 +19,4 @@
 </table>
 <hr>
 <p>All posts <a href="/archive">archived</a></p>
-<script src="//use.typekit.net/hvv6ahj.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
 {% endblock %}
-
