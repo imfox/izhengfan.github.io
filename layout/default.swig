@@ -18,8 +18,8 @@
 <div class="info-bottom"><div class="info-bottom-text">
 {% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
 {% if theme.creative_commons in cc %}
-<div class="cc-license motion-element" itemprop="license">
-  <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/" class="cc-opacity" target="_blank"{% if theme.seo %} rel="external nofollow"{% endif %}>
+License <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/">(CC) {{ theme.creative_commons | upper }}</a> | Github <a href="#"></a> | Twitter <a href="#"></a> | <div itemprop="license">
+  <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/" target="_blank"{% if theme.seo %} rel="external nofollow"{% endif %}>
     <img src="{{ url_for(theme.images) }}/cc-{{ theme.creative_commons }}.svg" alt="Creative Commons" />
   </a>
 </div>
