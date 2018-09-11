@@ -1,11 +1,12 @@
 {% extends 'default.swig' %}
 
+{% block content %}
 <header>
 <h2>{{ page.title }}</h2>
-<p><i>{{ page.date | date("b -d, Y") }}</i>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<p><i>{{ page.date | date("Y-m-d H:m") }}</i>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 </header>
 <article>
-{{content}}
+{{ page.content }}
 </article>
 <div id="info-bottom">
 <hr>
@@ -13,3 +14,4 @@
 <p><b>Comment</b> by <a href="https://github.com/izhengfan/izhengfan.github.io/issues"> Github Issues </a></p>
 <p><b>Chat</b> in <a href="https://gitter.im/fan-farm/Lobby">Gitter/fan-farm</a> </p>
 </div>
+{% endblock %}
