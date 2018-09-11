@@ -1,6 +1,5 @@
----
-layout: default
----
+{% extends 'default.swig' %}
+
 <header>
 <h2>{{ page.title }}</h2>
 <p><i>{{ page.date | date: "%b %-d, %Y" }}</i>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
@@ -9,8 +8,8 @@ layout: default
 {{content}}
 </article>
 <div id="info-bottom">
-<hr>    
-<p>Tags: {% for tag in page.tags %}<block class="tag"><a href="/archive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
+<hr>
+<p>Tags: {% for tag in post.tags %}<block class="tag"><a href="/archive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
 <p><b>Comment</b> by <a href="https://github.com/izhengfan/izhengfan.github.io/issues"> Github Issues </a></p>
 <p><b>Chat</b> in <a href="https://gitter.im/fan-farm/Lobby">Gitter/fan-farm</a> </p>
 </div>

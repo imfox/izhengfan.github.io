@@ -1,4 +1,4 @@
-{% extends '_layout.swig' %}
+{% extends 'default.swig' %}
 
 {% block content %}
 <article>
