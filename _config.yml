@@ -1,13 +1,15 @@
----
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
 
 # To get or check favicons visit: https://realfavicongenerator.net
-# Put your favicons into `hexo-site/source/` (recommend) or `hexo-site/themes/izhengfan/source/images/` directory.
+# Put your favicons into `hexo-site/source/` (recommend)
+# or `hexo-site/themes/izhengfan/source/images/` directory.
 
 # For example, you put your favicons into `hexo-site/source/images` directory.
-# Then need to rename & redefine they on any other names, otherwise icons from izhengfan will rewrite your custom icons in Hexo.
+# Then need to rename & redefine they on any other names, otherwise icons
+# from izhengfan will rewrite your custom icons in Hexo.
+---
 favicon:
   small: /favicon/favicon-16x16.png
   medium: /favicon/favicon-32x32.png
@@ -46,7 +48,9 @@ footer:
 # Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
-# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
+# Value after `||` delimeter is the name of FontAwesome icon.
+# If icon (with or without delimeter) is not specified,
+# globe icon will be loaded.
 social:
   GitHub: https://github.com/xiaocang || github
   #E-Mail: mailto:yourname@gmail.com || envelope
@@ -128,7 +132,8 @@ leancloud_visitors:
 # Set a CDN address for the vendor you want to customize.
 # For example
 #    jquery: https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
-# Be aware that you should use the same version as internal ones to avoid potential problems.
+# Be aware that you should use the same version
+# as internal ones to avoid potential problems.
 # Please use the https protocol of CDN files when you enable https on your site.
 vendors:
   # Internal path prefix. Please do not edit it.

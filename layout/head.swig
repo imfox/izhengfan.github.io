@@ -1,9 +1,9 @@
 <head>
-    {%# Origin Assets #%}
+    {# Origin Assets #}
     <link rel="stylesheet" type="text/css" href="/{{ theme.css || "css" }}/index.css">
-	<meta name="keywords" content="{% for keyword in themes.keywords %}{{ keyword }}, {% endfor %}{{ theme.title }}" />
+	<meta name="keywords" content="{% for keyword in theme.keywords.split(",") %}{{ keyword }}, {% endfor %}{{ config.title }}" />
 
-    {%# From Next Themes #%}
+    {# From Next Themes #}
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
@@ -11,7 +11,6 @@
     {# #238, Disable Baidu tranformation #}
     <meta http-equiv="Cache-Control" content="no-transform" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-
 
     {% if theme.google_site_verification %}
       <meta name="google-site-verification" content="{{ theme.google_site_verification }}" />

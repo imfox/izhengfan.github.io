@@ -2,7 +2,7 @@
 
 <header>
 <h2>{{ page.title }}</h2>
-<p><i>{{ page.date | date: "%b %-d, %Y" }}</i>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<p><i>{{ page.date | date("b -d, Y") }}</i>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 </header>
 <article>
 {{content}}

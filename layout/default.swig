@@ -6,17 +6,24 @@
 {% set description = __('description') !== 'description' && __('description') || config.description %}
 
 <html>
-{% include head.swig %}
+{% include 'head.swig' %}
 <body>
 <div class="body-wrapper">
 <div class="nav-header">
 <a href="{{ config.root }}">{{ title }}</a> | <a href="/about">About </a>
 </div>
 <div class="main-body">
-{{ content }}
+{% block content %}{% endblock %}
 </div>
 <div class="info-bottom"><div class="info-bottom-text">
-License <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a> | Subscribe <a href="/feed.xml">RSS</a> | Email <a href="mailto:fzheng@link.cuhk.edu.hk">fzheng@link.cuhk.edu.hk</a>
+{% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
+{% if theme.creative_commons in cc %}
+<div class="cc-license motion-element" itemprop="license">
+  <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/" class="cc-opacity" target="_blank"{% if theme.seo %} rel="external nofollow"{% endif %}>
+    <img src="{{ url_for(theme.images) }}/cc-{{ theme.creative_commons }}.svg" alt="Creative Commons" />
+  </a>
+</div>
+{% endif %}
 </div></div>
 </div>
 </body>
