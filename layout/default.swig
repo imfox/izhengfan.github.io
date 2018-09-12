@@ -30,6 +30,7 @@
 {% include 'footer.swig' %}
 </body>
 {% include '_partials/vendors.swig' %}
+{% include '_partials/google-analytics.swig' %}
 <script src="https://use.typekit.net/hvv6ahj.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 {% block custom_script %}{% endblock %}
