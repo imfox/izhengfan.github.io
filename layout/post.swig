@@ -10,7 +10,7 @@
 </article>
 <div id="info-bottom">
 <hr>
-<p>标签: {% for tag in page.tags %}<block class="izhengfan-tag"><a href="/archive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
+<p>标签: {% for tag in page.tags %}<block class="izhengfan-tag"><a href="/archive/#{{tag.name}}">{{ tag.name }}</a></block>{% endfor %}</p>
 {% include '_partials/disqus.swig' %}
 </div>
 {% endblock %}
