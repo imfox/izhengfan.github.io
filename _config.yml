@@ -42,7 +42,9 @@ footer:
     version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  custom_text: Hosted by <a target="_blank" href="https://app.netlify.com">Netlify</a>
+  custom_text:
+    - Theme based on <a target="_blank" href="https://fzheng.me/">fzheng.me</a> & <a target="_blank" href="https://theme-next.iissnan.com/">NexT</a>
+    - Hosted by <a target="_blank" href="https://app.netlify.com">Netlify</a>
 
 # Social Links.
 # Usage: `Key: permalink || icon`
