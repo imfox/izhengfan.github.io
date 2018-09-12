@@ -2,7 +2,7 @@
 
 {% block content %}
 <header>
-<h2>{{ page.title }}</h2>
+<h2>{{ page.title | escape }}</h2>
 <p><i>{{ page.date | date("Y-m-d H:m") }}</i>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 </header>
 <article>
