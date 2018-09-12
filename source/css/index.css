@@ -124,7 +124,8 @@ article table thead tr th, article table tbody tr td{
   border: 1px solid #ddd;
 }
 
-.tag{
+/* rename .tag to izhangfan-tag*/
+.izhengfan-tag{
   padding: 0.1em 0.6em;
   margin: 0.2em 0.4em;
   line-height: 1.5;
@@ -134,7 +135,7 @@ article table thead tr th, article table tbody tr td{
   font-size: 16px\9;
   font-size: 1rem;
 }
-.tag:hover{
+.izhengfan-tag:hover{
   background-color: #ddd;
 }
 #markdown-toc{

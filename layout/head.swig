@@ -53,7 +53,7 @@
       <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for(theme.favicon.small) }}?v={{ version }}">
     {% endif %}
     {% if theme.favicon.safari_pinned_tab %}
-      <link rel="mask-icon" href="{{ url_for(theme.favicon.safari_pinned_tab) }}?v={{ version }}" color="{{ theme.android_chrome_color }}">
+      <link rel="mask-icon" href="{{ url_for(theme.favicon.safari_pinned_tab) }}?v={{ version }}" {% if theme.android_chrome_color %}color="{{ theme.android_chrome_color }}"{% endif %}>
     {% endif %}
     {% if theme.favicon.android_manifest %}
       <link rel="manifest" href="{{ url_for(theme.favicon.android_manifest) }}">

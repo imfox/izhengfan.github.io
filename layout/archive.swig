@@ -3,7 +3,7 @@
 {% block content %}
 
 <h3 id="archives">存档</h3>
-标签: {% for tag in site.tags %}<block class="tag"><a href="#{{ tag | first }}">{{ tag | first }} </a></block>{% endfor %}
+标签: {% for tag in site.tags %}<block class="izhengfan-tag"><a href="#{{ tag | first }}">{{ tag | first }} </a></block>{% endfor %}
 
 {% for post in site.posts.sort('-date') %}
 {% set this_year = post.date | date("Y") %}
@@ -25,7 +25,7 @@
 <hr />
 
 <h3 id="tags">标签</h3>
-<p>{% for tag in site.tags %}<block class="tag"><a href="#{{ tag | first }}">{{ tag | first }} </a></block>{% endfor %}</p>
+<p>{% for tag in site.tags %}<block class="izhangfan-tag"><a href="#{{ tag | first }}">{{ tag | first }} </a></block>{% endfor %}</p>
 
 {% for tag in site.tags %}
 <div>

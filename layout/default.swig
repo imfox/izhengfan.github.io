@@ -15,18 +15,7 @@
 <div class="main-body">
 {% block content %}{% endblock %}
 </div>
-<div class="info-bottom"><div class="info-bottom-text">
-{% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
-<div itemprop="license">
-{% if theme.creative_commons in cc %}
-  <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/" target="_blank"{% if theme.seo %} rel="external nofollow"{% endif %}>
-    <img src="{{ url_for(theme.images) }}/cc-{{ theme.creative_commons }}.svg" alt="Creative Commons" />
-  </a>
-| {% endif %} Github <a href="#">@xiaocang</a>
-| Twitter <a href="#">@xiao_cang</a>
-</div>
-</div></div>
-</div>
+{% include 'footer.swig' %}
 </body>
 <script src="https://use.typekit.net/hvv6ahj.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>

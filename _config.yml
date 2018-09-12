@@ -63,6 +63,11 @@ social:
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
 
+social_icons:
+  enable: true
+  icons_only: true
+  transition: false
+
 # Blog rolls
 links_icon: link
 links_title: Links
