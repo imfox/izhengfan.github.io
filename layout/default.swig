@@ -10,7 +10,7 @@
 <body>
 <div class="body-wrapper">
 <div class="nav-header">
-    <a href="{{ config.root }}">{{ title }}</a> 
+    <a href="{{ config.root }}">{{ title }}</a>
     {# social #}
     {% if theme.social %} |
     {% for name, link in theme.social %}
@@ -29,6 +29,8 @@
 </div>
 {% include 'footer.swig' %}
 </body>
+{% include '_partials/vendors.swig' %}
 <script src="https://use.typekit.net/hvv6ahj.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+{% block custom_script %}{% endblock %}
 </html>

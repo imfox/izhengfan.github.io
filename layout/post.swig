@@ -10,8 +10,11 @@
 </article>
 <div id="info-bottom">
 <hr>
-<p>Tags: {% for tag in post.tags %}<block class="tag"><a href="/archive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
-<p><b>Comment</b> by <a href="#"> Github Issues </a></p>
-<p><b>Chat</b> in <a href="#">Gitter/fan-farm</a> </p>
+<p>标签: {% for tag in post.tags %}<block class="izhengfan-tag"><a href="/archive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
+{% include '_partials/disqus.swig' %}
 </div>
+{% endblock %}
+
+{% block custom_script %}
+{% include '_partials/disqus-script.swig' %}
 {% endblock %}

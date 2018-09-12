@@ -25,7 +25,7 @@
 <hr />
 
 <h3 id="tags">标签</h3>
-<p>{% for tag in site.tags %}<block class="izhangfan-tag"><a href="#{{ tag | first }}">{{ tag | first }} </a></block>{% endfor %}</p>
+<p>{% for tag in site.tags %}<block class="izhengfan-tag"><a href="#{{ tag | first }}">{{ tag | first }} </a></block>{% endfor %}</p>
 
 {% for tag in site.tags %}
 <div>

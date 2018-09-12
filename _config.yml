@@ -116,6 +116,7 @@ disqus:
   enable: true
   shortname: www-ogura-io
   count: false
+  lazyload: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/

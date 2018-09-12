@@ -27,7 +27,6 @@ body{
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-
 .nav-header
 {
   padding: 0.2em 3em\9;
@@ -290,3 +289,18 @@ article table thead tr th, article table tbody tr td{
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+/* disqus custom */
+.disqus_btn {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #999;
+    margin: 0 auto;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+}
+.disqus_btn:hover {
+    cursor: pointer;
+}
