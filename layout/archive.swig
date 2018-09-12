@@ -31,15 +31,8 @@
 <div>
 <legend id="{{ tag.name }}">{{ tag.name }}</legend>
 <ul>
-{% for post in site.posts.sort('-date') %}
-{% spaceless %}
-{% set match_tag = false %}
-{% for post_tag in post.tags %}
-{% if post_tag.name == tag.name %}
-{% set match_tag = true %}
-{% endif %}
-{% endfor %}
-{% endspaceless %}
+{% for post in site.posts.sort('-date') %} {% set match_tag = false %}
+{% for post_tag in post.tags %} {% if post_tag.name == tag.name %} {% set match_tag = true %} {% endif %} {% endfor %}
 {% if match_tag && post.path %}
 <p><span>{{ post.date | date("Y-m-d") }}</span> <a class="pjaxlink" href="{{ url_for(post.path) }}">{{ post.title }}</a></p>
 {% endif %}{% endfor %}</ul>
