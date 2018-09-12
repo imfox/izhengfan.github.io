@@ -31,8 +31,8 @@
 <div>
 <legend id="{{ tag.name }}">{{ tag.name }}</legend>
 <ul>
-{% spaceless %}
 {% for post in site.posts.sort('-date') %}
+{% spaceless %}
 {% set match_tag = false %}
 {% for post_tag in post.tags %}
 {% if post_tag.name == tag.name %}
