@@ -30,7 +30,7 @@
 {% for tag in site.tags %}
 <div>
 <legend id="{{ tag.name }}">{{ tag.name }}</legend>
-<ul>{% for post in site.tags.findOne({name: tag.name}).posts %}{% if post.path %}
+<ul>{% for post in site.tags.findOne({name: tag.name}).posts | sort('-date') %}{% if post.path %}
 <p><span>{{ post.date | date("Y-m-d") }}</span> <a class="pjaxlink" href="{{ url_for(post.path) }}">{{ post.title }}</a></p>
 {% endif %}{% endfor %}</ul>
 </div>
