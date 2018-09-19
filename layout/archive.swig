@@ -1,3 +1,5 @@
+{% set page_title = "存档 & 标签 - " + config.title %}
+
 {% extends 'default.swig' %}
 
 {% block content %}

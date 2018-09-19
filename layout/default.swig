@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 {# Init Config #}
-{% set title = __('title') !== 'title' && __('title') || config.title %}
+{% set title = page_title || config.title %}
 {% set author = __('author') !== 'author' && __('author') || config.author %}
 {% set description = __('description') !== 'description' && __('description') || config.description %}
 

@@ -1,3 +1,5 @@
+{% set page_title = page.title + " - " + config.title %}
+
 {% extends 'default.swig' %}
 
 {% block content %}
