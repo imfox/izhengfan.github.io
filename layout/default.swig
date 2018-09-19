@@ -10,7 +10,7 @@
 <body>
 <div class="body-wrapper">
 <div class="nav-header">
-    <a href="{{ config.root }}">{{ title }}</a>
+    <a href="{{ config.root }}">{{ config.title }}</a>
     {# social #}
     {% if theme.social %} |
     {% for name, link in theme.social %}
