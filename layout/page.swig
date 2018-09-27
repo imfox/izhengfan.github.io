@@ -2,6 +2,6 @@
 
 {% block content %}
 <article>
-{{ content }}
+{{ page.content }}
 </article>
 {% endblock %}

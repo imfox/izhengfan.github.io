@@ -19,7 +19,7 @@ favicon:
   ms_browserconfig: /favicon/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, Ogura, Note, Lua, Openresty"
+keywords: "Hexo, Lua, Openresty"
 
 footer:
   # Specify the date when the site was setup.
@@ -71,12 +71,7 @@ social_icons:
   transition: false
 
 # Blog rolls
-links_icon: link
-links_title: Links
-links_layout: block
-#links_layout: inline
-links:
-  王垠: http://www.yinwang.org/
+enable_blogroll: true
 
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/

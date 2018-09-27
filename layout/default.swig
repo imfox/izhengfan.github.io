@@ -22,6 +22,7 @@
     </a>
     {% endfor %}
     {% endif %}{# social #}
+    {% if theme.enable_blogroll %} | <a href="/blogroll">BlogRoll </a>{% endif %}
     {% if theme.enable_about %} | <a href="/about">About </a>{% endif %}
 </div>
 <div class="main-body">
