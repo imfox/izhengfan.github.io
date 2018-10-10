@@ -24,7 +24,7 @@ keywords: "Hexo, Lua, Openresty"
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  since: 2016
+  since: 2013
 
   # Icon between year and copyright info.
   icon: user
