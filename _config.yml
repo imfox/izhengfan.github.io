@@ -115,7 +115,7 @@ disqus:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-# google_site_verification:
+google_site_verification: DPtFgU1ecLVD89n5ACr9_0lnTxTyLpdl1i2NcBVzwmI
 
 # Google Analytics
 google_analytics: UA-111532458-1
