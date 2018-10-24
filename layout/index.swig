@@ -5,7 +5,7 @@
 <blockquote><p>{{ description }}</p></blockquote>
 </article>
 
-<p style="margin-top:1.2em;margin-bottom:0;"><b>文章</b> | 按<a href="{{ url_for(config.tag_dir) }}#tags">标签</a>浏览</p>
+<p style="margin-top:1.2em;margin-bottom:0;"><b>文章</b> | 按<a href="{{ url_for(config.tag_dir) }}#tags">标签</a>浏览 | 订阅 <a href="/atom.xml">RSS</a></p>
 <hr>
 <table>
 {% for post in page.posts %}
@@ -31,8 +31,6 @@
 <td><a class="post-list-item" href="{{ url_for(post.path) }}">{{ post.title | escape }}</a></td>
 </tr>
 {% endfor %}
-<hr>
-<p>订阅 <a href="/atom.xml">RSS</a></p>
 
 </tbody>
 </table>
