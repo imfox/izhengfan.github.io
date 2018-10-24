@@ -31,6 +31,8 @@
 <td><a class="post-list-item" href="{{ url_for(post.path) }}">{{ post.title | escape }}</a></td>
 </tr>
 {% endfor %}
+<hr>
+<p>订阅 <a href="/atom.xml">RSS</a></p>
 
 </tbody>
 </table>
