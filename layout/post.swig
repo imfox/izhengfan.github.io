@@ -9,7 +9,7 @@
     <i>{{ page.date | date("Y-m-d H:i") }}</i>
     {% if page.author %} • {{ page.author }}{% endif %}
     {% if page.meta %} • {{ page.meta }}{% endif %}
-    {% if config.source_url %} • <a href="{{ config.source_url }}{{ page.source }}">编辑本页</a>{% endif %}
+    {% if config.source_url %} • <a href="{{ config.source_url }}{{ page.source }}" target="_blank">编辑本页</a>{% endif %}
 </p>
 </header>
 <article>
