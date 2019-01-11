@@ -28,7 +28,9 @@
 
 <tr class="blog-table">
 <td>{{ post.date | date("Y-m-d") }}</td>
-<td><a class="post-list-item" href="{{ url_for(post.path) }}">{{ post.title | escape }}</a></td>
+<td {% if post.layout === 'life' %}class="alt-body"{% endif %}>
+    <a class="post-list-item" href="{{ url_for(post.path) }}">{{ post.title | escape }}</a>
+</td>
 </tr>
 {% endfor %}
 

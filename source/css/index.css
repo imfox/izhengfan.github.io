@@ -83,6 +83,9 @@ a:hover {
 .main-body a, .main-body a:visited {
   color: rgb(220, 0, 0);
 }
+.alt-body a, .alt-body a:visited {
+  color: #0012ff;
+}
 .main-body a:hover {
   color: rgb(10, 10, 10);
 }
