@@ -17,8 +17,8 @@
 </article>
 <div id="info-bottom">
 <hr>
-<p>标签: {% for tag in page.tags %}<block class="izhengfan-tag"><a href="{{ url_for(config.archive_dir) }}#{{tag.name}}">{{ tag.name }}</a></block>{% endfor %}</p>
-{% include '_partials/disqus.swig' %}
+<p>标签: {% for tag in page.tags %}<a href="{{ url_for(config.tag_dir) }}#{{tag.name}}">{{ tag.name }}</a>, {% endfor %}</p>
+{#% include '_partials/disqus.swig' %#}
 </div>
 {% endblock %}
 

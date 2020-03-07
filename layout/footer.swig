@@ -11,11 +11,12 @@
 {% endif %}{# license #}
 
 {# copyright #}
+&copy;<span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright | default(author) }}</span>
 {% set current = date(Date.now(), "YYYY") %}{#
-#}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
-#}<span itemprop="copyrightYear">{{ current }}</span>
+#} {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} - 2018 {% endif %}{#
+#}
+{# <span itemprop="copyrightYear">{{ current }}</span> #}
 
-<span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright | default(author) }}</span>
 
 {% if theme.footer.custom_text %}
   | {{ theme.footer.custom_text | join(" | ") }}

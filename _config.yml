@@ -24,13 +24,13 @@ keywords: "Hexo, Lua, Openresty"
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  since: 2013
+  since: 2017
 
   # Icon between year and copyright info.
   icon: user
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright: xiao_cang
+  copyright: fox
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
   powered: true
@@ -43,8 +43,8 @@ footer:
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   custom_text:
-    - Theme based on <a target="_blank" href="https://fzheng.me/">fzheng.me</a> & <a target="_blank" href="https://theme-next.iissnan.com/">NexT</a>
-    - Hosted by <a target="_blank" href="https://app.netlify.com">Netlify</a>
+    - Theme based on <a target="_blank" href="https://fzheng.me/">fzheng.me</a> & <a target="_blank" href="https://www.ogura.io/">仓</a>
+    # - Hosted by <a target="_blank" href="https://app.netlify.com">Netlify</a>
 
 # Social Links.
 # Usage: `Key: permalink || icon`
@@ -54,10 +54,10 @@ footer:
 # If icon (with or without delimeter) is not specified,
 # globe icon will be loaded.
 social:
-  GitHub: https://github.com/xiaocang || github
+  # GitHub: https://github.com/imfox || github 
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
-  Twitter: https://twitter.com/xiao__cang || twitter
+  # Twitter: https://twitter.com/xiao__cang || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/xiao_cang || stack-overflow
@@ -71,7 +71,8 @@ social_icons:
   transition: false
 
 # Blog rolls
-enable_blogroll: true
+enable_blogroll: false
+enable_about: true
 
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
